@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <style type="text/tailwindcss">
+    html {
+        font-family: "Poppins", sans-serif;
+        background: #f5f5f5;
+        
+      }
+      :focus-visible{
+        outline: none;
+        
+
+
+      }
+    </style>
+</head>
+
+<body>
+  <!--
+  ```
+-->
+  <section class="flex justify-center">
+    <div id="wrapper" class="xl:p-24 xl:my-24 px-8 py-24 rounded-lg bg-white w-full xl:w-3/5">
+      <div class="mb-16 flex justify-center">
+        <img src="tm-logo.svg" width="180px" />
+      </div>
+      <!--
+  Logo
+  ```
+-->
+      <div class="text-center font-bold mb-12">
+        <h1>Formato de creación-actualización <br>
+          para clientes/proveedores y beneficiarios</h1>
+      </div>
+      <div class="text-center text-indigo-800 font-bold mb-16">
+        <h1>Información persona natural</h1>
+      </div>
+
+      <div class=" grid xl:grid-cols-2 xl:gap-4">
+        <div class=" w-full xl:basis-1/2 mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Fecha</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="date" name="fecha" id="fecha"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-400 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 text-sm bg-gray-100 focus:bg-white sm:leading-6"
+              placeholder="Fecha" />
+          </div>
+        </div>
+        <!--
+  001
+  ```
+-->
+        <div class="w-full xl:basis-1/2 mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Ciudad</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus-visible:outline-none bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Ciudad" />
+          </div>
+        </div>
+      </div>
+      <!--
+  001
+  ```
+-->
+      <div class=" flex mx-auto xl:mt-4 ">
+        <div class="w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Nombres y apellidos</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Nombres y apellidos" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class=" grid xl:grid-cols-3 xl:gap-4 xl:mt-4">
+        <div class="w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Fecha de nacimiento</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="date" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-400 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class="w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">País</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="País" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class="w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Ciudad</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Ciudad" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="price" class="block text-xs font-medium leading-6 text-gray-900">Documento</label>
+
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="currency" class="sr-only">Currency</label>
+              <select id="currency" name="currency"
+                class="h-full rounded-md border-0 bg-transparent pl-2 text-gray-500 text-sm">
+                <option>CC</option>
+                <option>CAD</option>
+                <option>EUR</option>
+              </select>
+            </div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            </div>
+
+            <input type="text" name="price" id="price"
+              class="block w-full rounded-md border-0 py-3 pl-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Número de documento" />
+
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Lugar de expedición</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Lugar de expedición" />
+          </div>
+        </div>
+      </div>
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4 ">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Fecha de expedición</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="date" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-400 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Lugar de expedición" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Nacionalidad</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Nacionalidad" />
+          </div>
+        </div>
+      </div>
+
+      <!--
+DIRECCIÓN
+```
+-->
+      <div class="w-full grid xl:grid-cols-3 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Dirección</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Dirección" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Ciudad</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Ciudad" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">País</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="País" />
+          </div>
+        </div>
+      </div>
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Teléfono</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="fecha" id="fecha"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Teléfono" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Correo electrónico</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Correo electrónico" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="text-center text-indigo-800 font-bold m-16">
+        <h1>Información financiera</h1>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Ingresos anuales</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="fecha" id="fecha"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Ingresos anuales" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Egresos anuales</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Egresos anuales" />
+          </div>
+        </div>
+      </div>
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Otros ingresos anuales</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="fecha" id="fecha"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 text-sm bg-gray-100 focus:bg-white sm:leading-6"
+              placeholder="Otros ingresos anuales" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class="w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Concepto otros ingresos</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  text-sm bg-gray-100 focus:bg-white sm:leading-6"
+              placeholder="Concepto otros ingresos" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-3 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Activos totales</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Activos totales" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Pasivos totales</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Pasivos totales" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Patrimonio total</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Patrimonio total" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Referencias financieras</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="fecha" id="fecha"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Referencias financieras" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Cta. No.</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Cta. No." />
+          </div>
+        </div>
+      </div>
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Referencias financieras</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="fecha" id="fecha"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Referencias financieras" />
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Cta. No.</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Cta. No." />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="text-center text-indigo-800 font-bold m-16">
+        <h1>Declaración de bienes origen y fondos</h1>
+      </div>
+
+      <div class="flex items-center w-full mx-auto">
+        <input id="link-checkbox" type="checkbox" value=""
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-800 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-800">He leído y declaro
+          bajo la gravedad de juramento. <a href="docs/Trademate-Declaración de bienes origen y fondos.pdf" target="_blank" class="text-blue-600 dark:text-blue-500 hover:underline">Documento
+            declaración de bienes origen y fondos</a>.</label>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="text-center text-indigo-800 font-bold m-16">
+        <h1>Identificación de personas expuestas políticamente -PEPS</h1>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Maneja recursos públicos?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Detenta algún grado de poder público?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Goza de reconocimiento público?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Es usted una persona expuesta políticamente?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+
+        </div>
+        <div class="basis-1/2">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Específique:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Específique:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Es usted familiar de una persona expuesta políticamente hasta el segundo grado de
+            consanguinidad?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+
+        </div>
+        <div class="basis-1/2">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Específique:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Específique:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Es usted familiar de una persona expuesta políticamente hasta el segundo grado de
+            afinidad?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Tiene derecho, poder de firma o de otra índole sobre cuentas financieras en el extranjero?
+          </p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+
+        </div>
+        <div class="basis-1/2">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Específique:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Específique:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">Declaro que mis bienes provienen de actividades LÍCITAS.</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+
+        </div>
+        <div class="basis-1/2">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Específique:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Específique:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="text-center text-indigo-800 font-bold m-16">
+        <h1>Identificación del beneficiario final
+        </h1>
+      </div>
+      <!--
+001
+```
+-->
+
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Realiza transacciones y/u operaciones a nombre de algún tercero?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+
+        </div>
+        <div class="basis-1/2">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Específique:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Específique:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">¿Actúa individual o conjuntamente ejerciendo control y/o subordinación sobre otra persona
+            jurídica?</p>
+        </div>
+        <div class="flex w-2/3 my-4">
+
+          <div class="flex items-center">
+            <input id="default-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              Sí</label>
+          </div>
+          <div class="flex items-center mx-4">
+            <input checked id="checked-checkbox" type="checkbox" value=""
+              class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-full">
+            <label for="checked-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-900">
+              No</label>
+          </div>
+
+        </div>
+        <div class="basis-1/2">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Específique:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Específique:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto my-6">
+        <div>
+          <p class="text-sm">En caso de ser afirmativa algunas de las preguntas anteriores, específique los siguientes
+            datos en relación con el
+            beneficiario final sea persona jurídica o natural:</p>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="price" class="block text-xs font-medium leading-6 text-gray-900">Documento</label>
+
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="currency" class="sr-only">Currency</label>
+              <select id="currency" name="currency"
+                class="h-full rounded-md border-0 bg-transparent pl-2 text-gray-500  text-sm">
+                <option>CC</option>
+                <option>CAD</option>
+                <option>EUR</option>
+              </select>
+            </div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            </div>
+
+            <input type="text" name="price" id="price"
+              class="block w-full rounded-md border-0 py-3 pl-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Número de documento" />
+
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Nombre y apellido</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Nombre y apellido" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="price" class="block text-xs font-medium leading-6 text-gray-900">Documento</label>
+
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="currency" class="sr-only">Currency</label>
+              <select id="currency" name="currency"
+                class="h-full rounded-md border-0 bg-transparent pl-2 text-gray-500  text-sm">
+                <option>CC</option>
+                <option>CAD</option>
+                <option>EUR</option>
+              </select>
+            </div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            </div>
+
+            <input type="text" name="price" id="price"
+              class="block w-full rounded-md border-0 py-3 pl-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Número de documento" />
+
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Nombre y apellido</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Nombre y apellido" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="price" class="block text-xs font-medium leading-6 text-gray-900">Documento</label>
+
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="currency" class="sr-only">Currency</label>
+              <select id="currency" name="currency"
+                class="h-full rounded-md border-0 bg-transparent pl-2 text-gray-500  text-sm">
+                <option>CC</option>
+                <option>CAD</option>
+                <option>EUR</option>
+              </select>
+            </div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            </div>
+
+            <input type="text" name="price" id="price"
+              class="block w-full rounded-md border-0 py-3 pl-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Número de documento" />
+
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Nombre y apellido</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Nombre y apellido" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="text-center text-indigo-800 font-bold m-16">
+        <h1>Declaraciones generales
+        </h1>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="flex items-center w-full mx-auto">
+        <input id="link-checkbox" type="checkbox" value=""
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-800 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-800">He leído y declaro
+          bajo la gravedad de juramento que a la fecha de suscripción de este documento, él y sus beneficiarios finales,
+          accionistas, representantes legales o miembros de junta directiva. <a href="docs/Trademate-Declaraciones generales.pdf"
+          target="_blank" class="text-blue-600 dark:text-blue-500 hover:underline">Documento declaraciónes generales</a>.</label>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="text-center text-indigo-800 font-bold m-16">
+        <h1>Tratamiento de datos
+        </h1>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="flex items-center w-full mx-auto">
+        <input id="link-checkbox" type="checkbox" value=""
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-800 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-800">He leído y
+          autorizo. <a href="docs/Trademate-Tratamiento de datos.pdf" target="_blank" class="text-blue-600 dark:text-blue-500 hover:underline">Documento tratamiento de
+            datos</a>.</label>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full mx-auto mt-24">
+        <div>
+          <p class="text-sm">En constancia de haber leído, entendido y aceptado lo anterior, firmo el documento:</p>
+        </div>
+
+        <div class="basis-1/2 mt-6">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Firma de quien suscribe el
+            documento:</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Firma de quien suscribe el documento:" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+      <div class="w-full grid xl:grid-cols-2 xl:gap-4 xl:mt-4">
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="price" class="block text-xs font-medium leading-6 text-gray-900">Documento</label>
+
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="absolute inset-y-0 left-0 flex items-center">
+              <label for="currency" class="sr-only">Currency</label>
+              <select id="currency" name="currency"
+                class="h-full rounded-md border-0 bg-transparent pl-2 text-gray-500  text-sm">
+                <option>CC</option>
+                <option>CAD</option>
+                <option>EUR</option>
+              </select>
+            </div>
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            </div>
+
+            <input type="text" name="price" id="price"
+              class="block w-full rounded-md border-0 py-3 pl-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Número de documento" />
+
+          </div>
+        </div>
+        <!--
+001
+```
+-->
+        <div class=" w-full mt-4 xl:mt-0">
+          <label for="fecha" class="block text-xs font-medium leading-6 text-gray-900">Nombre y apellido</label>
+          <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"></div>
+            <input type="text" name="ciudad" id="ciudad"
+              class="block w-full rounded-md border-0 py-3 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 bg-gray-100 focus:bg-white text-sm sm:leading-6"
+              placeholder="Nombre y apellido" />
+          </div>
+        </div>
+      </div>
+      <!--
+001
+```
+-->
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>
